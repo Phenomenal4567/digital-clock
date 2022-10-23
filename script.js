@@ -1,9 +1,9 @@
-window.addEventListener("load", calculateTime)
+window.addEventListener("load", calculateTime);
 
 function calculateTime() {
-  let date = new Date(); 
- let dayNumber = date.getDay();
- let hour = date.getHours();
+  let date = new Date();
+  let dayNumber = date.getDay();
+  let hour = date.getHours();
   let minutes = date.getMinutes();
   let seconds = date.getSeconds();
   let month = date.getMonth();
@@ -44,10 +44,9 @@ function calculateTime() {
   document.getElementById("hour").innerHTML = hour;
   document.getElementById("seconds").innerHTML = seconds;
   document.getElementById("minutes").innerHTML = minutes;
- document.getElementById("dates").innerHTML = dates;
+  document.getElementById("dates").innerHTML = dates;
   document.getElementById("year").innerHTML = year;
   document.getElementById("ampm").innerHTML = ampm;
-  
-  setTimeout(calculateTime, 200);
-  
+
+  setTimeout(calculateTime, 1000);
 }
